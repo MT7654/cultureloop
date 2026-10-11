@@ -1,0 +1,145 @@
+/* Readable at normal browser zoom, with space for larger type. */
+body { font-size: 16px; }
+.nav-link, .button, .chip, .text-button, .back-button, .view-toggle button,
+.filter-button, .story-form legend, .dna-bottom legend, .timing-label,
+.balance-panel label, .field-label, .story-form input, .story-form select,
+.story-form textarea, .source-details, .loop-footer p { font-size: 16px; }
+.hero-description, .onboarding-intro > p:not(.eyebrow), .dna-heading p,
+.page-title-row p, .event-description, .your-bridge p, .match-reason,
+.connection-explanation p, .empty-state p { font-size: 17px; line-height: 1.7; }
+.event-meta, .connection-meta, .event-facts, .budget-breakdown,
+.budget-breakdown small, .card-price small, .balance-panel p, .trust-note,
+.timing-note, .saved-info small, .source-details p, .experience-quick-facts { font-size: 14px; line-height: 1.65; }
+.event-title { font-size: 28px; line-height: 1.2; }
+.connection-explanation h2 { font-size: 30px; line-height: 1.15; }
+.connection-explanation { padding: 28px; }
+.connection-explanation .text-button { font-size: 16px; min-height: 48px; }
+.constellation-layout { grid-template-columns: minmax(0, 1.8fr) minmax(310px, 1fr); }
+.constellation-caption { font-size: 14px; gap: 16px; }
+.eyebrow, .section-label, .event-card-body > .eyebrow { letter-spacing: 1px; line-height: 1.6; }
+.taste-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.taste-tile { height: 224px; padding: 16px; }
+.taste-tile b { font-size: 17px; line-height: 1.3; }
+.taste-tile > span:last-child { font-size: 14px; line-height: 1.5; }
+.taste-art { bottom: 82px; }
+.discovery-sound-bar, .onboarding-sound-note { display: flex; align-items: center; justify-content: space-between; gap: 28px; border-top: 1px solid var(--line); padding: 24px 0; margin-top: 24px; }
+.discovery-sound-bar > p, .onboarding-sound-note p { font-size: 17px; line-height: 1.6; margin: 0; }
+.discovery-sound-bar > p > span, .onboarding-sound-note p > span { display: block; color: var(--muted); font-size: 14px; }
+.onboarding-sound-note > div { display: flex; align-items: center; gap: 14px; }
+.discovery-sound-bar > .atmosphere-player, .onboarding-sound-note > .atmosphere-player { width: min(510px, 50%); }
+.onboarding-sound-note br { display: none; }
+.hero-actions { flex-wrap: wrap; gap: 14px 20px; }
+.hero-small { flex-wrap: wrap; line-height: 1.6; gap: 8px 20px; }
+.site-footer { gap: 26px; flex-wrap: wrap; line-height: 1.7; }
+.site-footer > span, .site-footer p, .site-footer a, .site-footer button { font-size: 13px; }
+.cosmos-coordinate { font-size: 12px; }
+.cosmos-coordinate span { font-size: 11px; }
+.cosmos-stage { height: 490px; }
+.cosmos-view-controls, .cosmos-legend { font-size: 13px; line-height: 1.5; }
+.cosmos-origin-label, .cosmos-interest-label, .cosmos-origin-label strong { font-size: 12px; }
+.cosmos-origin-label { letter-spacing: .04em; }
+.cosmos-node-label { width: 165px; }
+.cosmos-node-label strong { font-size: 14px !important; }
+.cosmos-node-label span { font-size: 10px !important; letter-spacing: .03em; }
+.cosmos-event-controls button strong { font-size: 14px !important; }
+.cosmos-event-controls button > span { font-size: 13px; }
+.cosmos-relations, .cosmos-relations summary { font-size: 14px; }
+.cosmos-relations p, .cosmos-taste-controls button { font-size: 14px !important; }
+.cosmos-event-controls { grid-template-columns: 1fr; }
+.cosmos-event-controls button { min-height: 44px; padding: 10px 0 !important; }
+.cosmos-interest-label { background: #090e18c9; padding: 2px 4px; }
+.reset-dialog p { font-size: 16px; line-height: 1.65; }
+.page-title-row > div > p:not(.eyebrow), .dna-heading p:not(.eyebrow) { font-size: 17px; line-height: 1.7; }
+.choice-grid button, .sentiment-row button { font-size: 15px; line-height: 1.4; }
+.constellation-caption > span, .constellation-caption span:last-child { font-size: 13px; max-width: none; }
+.culture-cosmos .cosmos-stage { height: 490px; }
+.culture-cosmos-compact .cosmos-stage { height: 100%; }
+.culture-cosmos .cosmos-origin-label, .culture-cosmos .cosmos-interest-label { font-size: 12px; }
+.culture-cosmos .cosmos-origin-label strong { font-size: 12px; }
+.culture-cosmos .cosmos-node-label { width: 165px; }
+.culture-cosmos .cosmos-node-label strong { font-size: 14px !important; }
+.culture-cosmos .cosmos-node-label span { font-size: 10px !important; letter-spacing: .03em; }
+.culture-cosmos .cosmos-view-controls, .culture-cosmos .cosmos-legend { font-size: 13px; }
+.culture-cosmos .cosmos-coordinate { font-size: 12px; }
+.culture-cosmos .cosmos-coordinate span { font-size: 11px; }
+.culture-cosmos .cosmos-event-controls button strong { font-size: 14px !important; }
+.culture-cosmos .cosmos-event-controls button > span { font-size: 13px; }
+.culture-cosmos .cosmos-relations, .culture-cosmos .cosmos-relations summary { font-size: 14px; }
+.culture-cosmos .cosmos-relations p, .culture-cosmos .cosmos-taste-controls button { font-size: 14px !important; }
+.journey-player + .app-shell .site-footer { padding-bottom: 155px; }
+@media (max-width: 1000px) {
+  .constellation-layout { grid-template-columns: minmax(0, 1fr); }
+  .connection-explanation { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 10px 22px; }
+  .connection-cover { width: 125px; height: 125px; grid-row: 1/5; }
+  .connection-explanation .text-button { grid-column: 2; margin-top: 0; }
+  .discovery-sound-bar, .onboarding-sound-note { align-items: stretch; flex-direction: column; gap: 16px; }
+  .discovery-sound-bar > .atmosphere-player, .onboarding-sound-note > .atmosphere-player { width: 100%; }
+}
+@media (max-width: 600px) {
+  .site-header { gap: 10px; }
+  .site-header nav { gap: 14px; }
+  .nav-link { font-size: 14px; white-space: nowrap; }
+  .page-title-row > div > p:not(.eyebrow), .dna-heading p:not(.eyebrow) { font-size: 16px; }
+  .sentiment-row { flex-wrap: wrap; }
+  .sentiment-row button { flex: 1 1 90px; }
+  .culture-cosmos .cosmos-stage { height: 420px; }
+  .culture-cosmos-compact .cosmos-stage { height: 100%; }
+  .culture-cosmos .cosmos-node-label { width: 124px; }
+  .culture-cosmos .cosmos-node-label strong { font-size: 13px !important; }
+  .culture-cosmos .cosmos-node-label:not(.is-selected) span { display: none; }
+  .culture-cosmos .cosmos-interest-label { font-size: 11px; }
+  .culture-cosmos .cosmos-origin-label { font-size: 10px; }
+  .culture-cosmos .cosmos-origin-label strong { font-size: 11px; }
+  .culture-cosmos .cosmos-projected-label:has(.cosmos-origin-label) {
+    left: 12px; right: 12px; top: 74px; transform: none !important; text-align: center;
+  }
+  .culture-cosmos .cosmos-origin-label strong { max-width: 100%; font-size: 13px; text-align: center; }
+  .culture-cosmos .cosmos-view-controls { font-size: 11px; }
+  .culture-cosmos .cosmos-legend { font-size: 12px; }
+  .connection-explanation > * { min-width: 0; }
+  .connection-explanation .text-button { box-sizing: border-box; min-width: 0; }
+  .connection-explanation > .text-button { margin-left: 0; }
+  .connection-explanation p { width: auto; }
+  .button, .chip, .text-button, .back-button, .view-toggle button, .filter-button { font-size: 15px; }
+  .hero-description, .onboarding-intro > p:not(.eyebrow), .dna-heading p, .page-title-row p,
+  .event-description, .your-bridge p, .match-reason, .connection-explanation p { font-size: 16px; }
+  .hero-description { max-width: 100%; }
+  .taste-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .taste-tile { height: 240px; padding: 13px; }
+  .taste-tile b { font-size: 16px; }
+  .taste-tile > span:last-child { font-size: 13px; }
+  .taste-art { bottom: 104px; }
+  .event-card { grid-template-columns: 1fr; gap: 18px; }
+  .event-art { width: 100%; height: auto; }
+  .save-button { width: 44px; height: 44px; top: 12px; right: 12px; }
+  .save-button svg { width: 19px; }
+  .event-title { font-size: 27px; }
+  .connection-explanation { padding: 20px; grid-template-columns: 85px minmax(0, 1fr); gap: 10px 16px; }
+  .connection-cover { width: 85px; height: 85px; grid-row: 1/3; }
+  .connection-explanation h2 { font-size: 25px; margin: 0; }
+  .connection-explanation > .eyebrow { font-size: 11px; }
+  .connection-meta, .connection-explanation p, .connection-explanation .text-button { grid-column: 1/-1; }
+  .connection-explanation .text-button { max-width: none; }
+  .constellation-caption { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .cosmos-stage { height: 420px; }
+  .cosmos-node-label { width: 128px; }
+  .cosmos-node-label strong { font-size: 13px !important; }
+  .cosmos-node-label span { font-size: 10px !important; }
+  .cosmos-node-label:not(.is-selected) span { display: none; }
+  .cosmos-interest-label { font-size: 11px; }
+  .cosmos-origin-label { font-size: 10px; }
+  .cosmos-origin-label strong { font-size: 11px; max-width: 135px; }
+  .cosmos-view-controls { font-size: 11px; }
+  .cosmos-legend { gap: 12px; font-size: 12px; }
+  .cosmos-relations p { font-size: 14px !important; }
+  .eyebrow { font-size: 12px; }
+  .hero-small { font-size: 12px; }
+  .saved-row { grid-template-columns: 65px minmax(0, 1fr) 32px; padding: 14px; gap: 12px; }
+  .saved-info .event-title { font-size: 23px; }
+  .saved-info > .eyebrow { font-size: 11px; }
+  .site-footer > span { font-size: 12px; }
+  .header-edition { display: none; }
+  .poster-top, .poster-bottom { font-size: 11px; letter-spacing: 1px; }
+  .balance-ticket > .eyebrow { font-size: 11px; }
+  .balance-ticket small { font-size: 12px; }
+}

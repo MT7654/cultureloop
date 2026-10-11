@@ -1,0 +1,20 @@
+{
+  "errors": [],
+  "failedRequests": [],
+  "screens": [
+    {
+      "name": "desktop",
+      "webgl": true,
+      "savedAfterReload": 1,
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "webgl": true,
+      "savedAfterReload": 1,
+      "overflow": false
+    }
+  ],
+  "idleMainThreadMs": 109,
+  "frontendCredentialMarkersAbsent": true
+}

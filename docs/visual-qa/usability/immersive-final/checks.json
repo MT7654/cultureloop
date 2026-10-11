@@ -1,0 +1,697 @@
+{
+  "errors": [],
+  "reports": [
+    {
+      "device": "desktop",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "17px",
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "17px",
+        ".cosmos-node-label strong": "14px",
+        ".cosmos-interest-label": "12px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": {
+          "x": 64,
+          "width": 1312,
+          "right": 1376,
+          "columns": "842.141px 467.844px",
+          "column": "auto",
+          "padding": "0px"
+        },
+        ".connection-explanation": {
+          "x": 907.140625,
+          "width": 467.84375,
+          "right": 1374.984375,
+          "columns": "none",
+          "column": "auto",
+          "padding": "28px"
+        },
+        ".connection-explanation .text-button": {
+          "x": 936.140625,
+          "width": 410.84375,
+          "right": 1346.984375,
+          "columns": "none",
+          "column": "auto",
+          "padding": "12px 18px"
+        }
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "17px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "17px",
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "17px",
+        ".cosmos-node-label strong": "14px",
+        ".cosmos-interest-label": "12px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": {
+          "x": 64,
+          "width": 1152,
+          "right": 1216,
+          "columns": "739.281px 410.719px",
+          "column": "auto",
+          "padding": "0px"
+        },
+        ".connection-explanation": {
+          "x": 804.28125,
+          "width": 410.71875,
+          "right": 1215,
+          "columns": "none",
+          "column": "auto",
+          "padding": "28px"
+        },
+        ".connection-explanation .text-button": {
+          "x": 833.28125,
+          "width": 353.71875,
+          "right": 1187,
+          "columns": "none",
+          "column": "auto",
+          "padding": "12px 18px"
+        }
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "17px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "16px",
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "16px",
+        ".cosmos-node-label strong": "13px",
+        ".cosmos-interest-label": "11px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": {
+          "x": 22,
+          "width": 346,
+          "right": 368,
+          "columns": "344px",
+          "column": "auto",
+          "padding": "0px"
+        },
+        ".connection-explanation": {
+          "x": 23,
+          "width": 344,
+          "right": 367,
+          "columns": "85px 203px",
+          "column": "auto",
+          "padding": "20px"
+        },
+        ".connection-explanation .text-button": {
+          "x": 43,
+          "width": 304,
+          "right": 347,
+          "columns": "none",
+          "column": "1 / -1",
+          "padding": "12px 18px"
+        }
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "16px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "16px",
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "16px",
+        ".cosmos-node-label strong": "13px",
+        ".cosmos-interest-label": "11px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": {
+          "x": 22,
+          "width": 316,
+          "right": 338,
+          "columns": "314px",
+          "column": "auto",
+          "padding": "0px"
+        },
+        ".connection-explanation": {
+          "x": 23,
+          "width": 314,
+          "right": 337,
+          "columns": "85px 173px",
+          "column": "auto",
+          "padding": "20px"
+        },
+        ".connection-explanation .text-button": {
+          "x": 43,
+          "width": 274,
+          "right": 317,
+          "columns": "none",
+          "column": "1 / -1",
+          "padding": "12px 18px"
+        }
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "16px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      },
+      "previewBounds": {
+        ".constellation-layout": null,
+        ".connection-explanation": null,
+        ".connection-explanation .text-button": null
+      }
+    }
+  ]
+}

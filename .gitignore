@@ -1,0 +1,31 @@
+app/node_modules/
+app/dist/
+app/test-results/
+app/playwright-report/
+app/*.tsbuildinfo
+.DS_Store
+*.log
+.neon
+.env.local
+node_modules/
+
+# Private machine/account configuration. Keep only credential-free templates.
+.env
+.env.*
+!.env.example
+.neon*
+/.agents/
+/.codex/
+/.aws/
+.vercel/
+coverage/
+*.tsbuildinfo
+
+# Preserve local workshop archives and intermediate captures without publishing them.
+docs/archive/
+docs/demo/page@*.webm
+docs/visual-qa/**/*.png
+docs/visual-qa/**/*.html
+!docs/visual-qa/culture-pass-landing/final/*.png
+!docs/visual-qa/usability/immersive-final/*.png
+!docs/visual-qa/spatial-motion/*.png

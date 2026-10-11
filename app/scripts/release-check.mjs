@@ -1,0 +1,56 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { loadEnv } from 'vite';
+const base=process.env.CULTURELOOP_REVIEW_URL || 'http://127.0.0.1:4173';
+const dir=process.argv[2] || '../docs/visual-qa/usability';
+fs.mkdirSync(dir,{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const report={errors:[],failedRequests:[],screens:[],idleMainThreadMs:null};
+for(const [name,width,height] of [['desktop',1440,900],['mobile',390,844]]){
+ const page=await browser.newPage({viewport:{width,height}});
+ page.on('pageerror',error=>report.errors.push(error.message));
+ page.on('response',response=>{if(response.url().startsWith(base)&&response.status()>=400)report.failedRequests.push({status:response.status(),path:new URL(response.url()).pathname});});
+ await page.goto(base);
+ await page.getByRole('button',{name:'Try the S$45 demo'}).click();
+ await page.getByRole('button',{name:'What moves you'}).click();
+ await page.getByRole('button',{name:'Reveal my CultureLoop'}).click();
+ await page.waitForFunction(()=>document.querySelector('.culture-cosmos')?.dataset.renderer==='webgl'&&document.querySelector('canvas')?.dataset.cameraPosition);
+ await page.waitForTimeout(1200);
+ assert.equal(await page.locator('.event-card').count(),0);
+ assert.equal(await page.locator('.cosmos-node-label strong').first().evaluate(el=>getComputedStyle(el).fontSize),width<600?'13px':'14px');
+ await page.getByRole('button',{name:'List view',exact:true}).click();
+ assert.equal(await page.locator('.event-card').count(),3);
+ assert.equal(await page.locator('.constellation').count(),0);
+ await page.getByRole('button',{name:'Constellation',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('canvas')?.dataset.cameraPosition);
+ await page.locator('.cosmos-stage').scrollIntoViewIfNeeded();
+ await page.waitForFunction(()=>document.querySelector('canvas')?.dataset.formationComplete==='true');
+ if(name==='desktop'){
+  const cdp=await page.context().newCDPSession(page);await cdp.send('Performance.enable');
+  const read=async()=> (await cdp.send('Performance.getMetrics')).metrics.find(x=>x.name==='TaskDuration').value;
+  const start=await read();await page.waitForTimeout(4000);report.idleMainThreadMs=Math.round((await read()-start)*1000);
+ }
+ await page.locator('.cosmos-stage').screenshot({path:`${dir}/release-${name}-atlas.png`});
+ await page.locator('.event-node').nth(1).click();
+ await page.getByRole('button',{name:'Explore this',exact:true}).click();
+ await page.getByRole('button',{name:'Play interpretation',exact:true}).click();
+ await page.getByRole('button',{name:'Pause interpretation',exact:true}).waitFor();
+ await page.getByRole('button',{name:'Pause interpretation',exact:true}).click();
+ await page.getByRole('button',{name:'Save to My Loop',exact:true}).click();
+ await page.getByRole('button',{name:'See my Loop'}).click();await page.reload();
+ assert.equal(await page.locator('.saved-row').count(),1);
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+ report.screens.push({name,webgl:true,savedAfterReload:1,overflow:false});
+ await page.close();
+}
+const bundles=fs.readdirSync('dist/assets').filter(name=>name.endsWith('.js')).map(name=>fs.readFileSync('dist/assets/'+name,'utf8')).join('\n');
+report.frontendCredentialMarkersAbsent=!/postgres(?:ql)?:\/\/|DATABASE_URL|NEON_API_KEY|OPENAI_API_KEY|sk-proj-[A-Za-z0-9]/.test(bundles);
+const env=loadEnv('production','..','');
+report.actualCredentialValuesAbsent=Object.entries(env).filter(([name,value])=> /KEY|TOKEN|DATABASE_URL/.test(name)&&value.length>12).every(([,value])=>!bundles.includes(value));
+const api=await fetch(base+'/api/interpret-memory',{method:'POST',headers:{'Content-Type':'application/json','X-CultureLoop-Request':'1'},body:JSON.stringify({memory:''})});
+report.productionPreviewAPIValidationStatus=api.status;
+assert.equal(api.status,400);assert.equal(report.actualCredentialValuesAbsent,true);
+assert.equal(report.frontendCredentialMarkersAbsent,true);assert.deepEqual(report.errors,[]);assert.deepEqual(report.failedRequests,[]);
+fs.writeFileSync(`${dir}/release-check.json`,JSON.stringify(report,null,2));
+console.log(JSON.stringify(report));await browser.close();

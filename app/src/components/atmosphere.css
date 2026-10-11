@@ -1,0 +1,347 @@
+.atmosphere-player {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: #171a17;
+  border: 1px solid #343b30;
+  border-radius: 6px;
+  color: #f4f4ed;
+  position: relative;
+  min-width: 0;
+}
+.atmosphere-caption {
+  display: grid;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+.atmosphere-caption strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.atmosphere-caption span {
+  color: #a4ab9d;
+  font-size: 14px;
+}
+.atmosphere-play,
+.atmosphere-mute {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #e9ede2;
+  min-height: 38px;
+  min-width: 38px;
+  padding: 0;
+  cursor: pointer;
+}
+.atmosphere-play {
+  border-radius: 50%;
+  background: #d6ff75;
+  color: #18220c;
+  width: 38px;
+  height: 38px;
+}
+.atmosphere-play:hover {
+  background: #e1ff9b;
+}
+.atmosphere-mute:hover {
+  color: #d6ff75;
+}
+.atmosphere-volume {
+  display: flex;
+  align-items: center;
+  width: 76px;
+}
+.atmosphere-volume input,
+.preview-volume input {
+  width: 100%;
+  accent-color: #d6ff75;
+  cursor: pointer;
+  height: 28px;
+}
+.audio-sr-only {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sound-meter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 30px;
+  width: 54px;
+  flex-shrink: 0;
+}
+.sound-meter i {
+  height: 30px;
+  width: 2px;
+  background: #d6ff75;
+  transform: scaleY(0.22);
+  transform-origin: 50% 50%;
+  border-radius: 1px;
+}
+.sound-meter:not(.is-live) i:nth-child(3n) {
+  transform: scaleY(0.45) !important;
+}
+.sound-meter:not(.is-live) i:nth-child(3n + 1) {
+  transform: scaleY(0.2) !important;
+}
+.sound-meter:not(.is-live) i:nth-child(3n + 2) {
+  transform: scaleY(0.3) !important;
+}
+.atmosphere-error {
+  font-size: 14px;
+  color: #ffcdb9;
+  line-height: 1.5;
+}
+.atmosphere-player .atmosphere-error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 4px 0;
+  z-index: 2;
+  background: #151712;
+  padding: 8px;
+}
+.immersive-sound-preview.sonic-preview {
+  background: #121611;
+  border: 1px solid #32382d;
+  overflow: hidden;
+  color: #f2f3e9;
+  position: relative;
+  isolation: isolate;
+}
+.immersive-sound-preview .sonic-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+}
+.immersive-sound-preview .sonic-cover > .event-cover,
+.immersive-sound-preview .sonic-cover > .artwork {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.sonic-stamp {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f8f6ec;
+  z-index: 2;
+}
+.sonic-stamp span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  max-width: 180px;
+}
+.sonic-stamp .sound-meter {
+  height: 22px;
+}
+.sonic-stamp .sound-meter i {
+  height: 22px;
+}
+.sonic-stamp:before {
+  content: "";
+  position: absolute;
+  inset: -25px -24px -20px;
+  background: linear-gradient(transparent, #080b08cc);
+  z-index: -1;
+  pointer-events: none;
+}
+.immersive-sound-preview .preview-label {
+  position: static;
+  inset: auto;
+  padding: 26px 26px 10px;
+  background: #121611;
+}
+.immersive-sound-preview .preview-label .eyebrow {
+  color: #d6ff75;
+}
+.immersive-sound-preview .preview-label h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(32px, 3.8vw, 54px);
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+  margin: 12px 0;
+  color: #f4f5ed;
+}
+.immersive-sound-preview .preview-label p {
+  margin: 12px 0 0;
+  color: #a6ad9d;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.immersive-sound-preview .audio-console {
+  padding: 16px 26px 20px;
+  background: #121611;
+  position: static;
+  border: 0;
+}
+.immersive-sound-preview .audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.immersive-sound-preview .audio-controls > span {
+  font-size: 16px;
+  line-height: 1.5;
+  flex: 1;
+  min-width: 0;
+}
+.immersive-sound-preview .audio-controls small {
+  display: block;
+  color: #a4ab9d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.immersive-sound-preview .round-button {
+  color: #132007;
+  background: #d6ff75;
+  border: 0;
+  min-width: 48px;
+  min-height: 48px;
+  display: grid;
+  place-items: center;
+}
+.immersive-sound-preview .icon-button {
+  color: #c8cebe;
+  border: 0;
+  min-width: 38px;
+  min-height: 44px;
+  background: transparent;
+}
+.preview-volume {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 8px;
+  color: #abb49f;
+  font-size: 15px;
+}
+.preview-volume label {
+  flex-shrink: 0;
+}
+.preview-volume span {
+  width: 30px;
+  flex-shrink: 0;
+  text-align: right;
+}
+.immersive-sound-preview .sound-modes {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.immersive-sound-preview .sound-modes button {
+  border: 1px solid #454b3c;
+  border-radius: 4px;
+  flex: 1;
+  min-height: 40px;
+  color: #b5bdab;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+.immersive-sound-preview .sound-modes button[aria-pressed="true"] {
+  background: #2a3420;
+  color: #dcff9a;
+  border-color: #759641;
+}
+.immersive-sound-preview .interpretation {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a6ad9d;
+  margin: 0;
+  padding: 0 26px 20px;
+}
+.immersive-sound-preview > .atmosphere-error {
+  padding: 0 26px 16px;
+}
+.atmosphere-player button:focus-visible,
+.atmosphere-player input:focus-visible,
+.immersive-sound-preview button:focus-visible,
+.immersive-sound-preview input:focus-visible {
+  outline: 2px solid #d6ff75;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .atmosphere-player {
+    display: grid;
+    grid-template-columns: 1fr 44px 44px;
+    gap: 8px;
+    padding: 14px;
+  }
+  .atmosphere-player > .sound-meter {
+    display: none;
+  }
+  .atmosphere-caption strong {
+    font-size: 16px;
+  }
+  .atmosphere-caption span {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .atmosphere-volume {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .atmosphere-mute {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .atmosphere-play {
+    width: 44px;
+    height: 44px;
+  }
+  .immersive-sound-preview .preview-label {
+    padding: 24px 20px 8px;
+  }
+  .immersive-sound-preview .audio-console {
+    padding: 14px 20px 18px;
+  }
+  .immersive-sound-preview .interpretation {
+    padding: 0 20px 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sound-meter i {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+/* Refinement: the mix label has its own rail so it never covers poster typography. */
+.immersive-sound-preview .sonic-stamp {
+  position: static;
+  inset: auto;
+  padding: 12px 26px 0;
+  background: #121611;
+  min-height: 34px;
+}
+.immersive-sound-preview .sonic-stamp:before {
+  display: none;
+}
+.immersive-sound-preview .preview-label {
+  padding-top: 18px;
+}
+.immersive-sound-preview .audio-controls > span {
+  color: #edf1e6;
+}
+@media (max-width: 600px) {
+  .immersive-sound-preview .sonic-stamp {
+    padding: 12px 20px 0;
+  }
+}

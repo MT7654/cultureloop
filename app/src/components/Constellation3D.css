@@ -1,0 +1,595 @@
+.culture-cosmos {
+  position: relative;
+  background: #090e18;
+  color: #f3f5f7;
+  border: 1px solid #233040;
+  overflow: hidden;
+  width: 100%;
+  isolation: isolate;
+}
+.cosmos-stage {
+  position: relative;
+  height: 440px;
+  min-width: 0;
+}
+.cosmos-stage canvas {
+  touch-action: none;
+  display: block;
+}
+.cosmos-projected-labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.cosmos-projected-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+.cosmos-projected-label button {
+  pointer-events: auto;
+}
+.cosmos-coordinate {
+  position: absolute;
+  top: 24px;
+  left: 26px;
+  color: #9bcfff;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 0.18em;
+  pointer-events: none;
+}
+.cosmos-coordinate span {
+  color: #718398;
+  font-size: 8px;
+}
+.cosmos-view-controls {
+  position: absolute;
+  bottom: 18px;
+  left: 26px;
+  right: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  color: #9aaabc;
+  pointer-events: none;
+}
+.cosmos-view-controls button {
+  pointer-events: auto;
+  background: #111b29 !important;
+  border: 1px solid #334457 !important;
+  color: #dce7f4 !important;
+  border-radius: 4px !important;
+  font: inherit;
+  padding: 8px 12px !important;
+  cursor: pointer;
+}
+.cosmos-origin-label {
+  display: block;
+  white-space: nowrap;
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: #9bcfff;
+  pointer-events: none;
+}
+.cosmos-interest-label {
+  display: block;
+  white-space: nowrap;
+  font-size: 9px;
+  letter-spacing: 0.015em;
+  color: #c0cfdf;
+  pointer-events: none;
+}
+.cosmos-node-label {
+  width: 144px;
+  padding: 7px 7px !important;
+  text-align: center !important;
+  line-height: 1.2;
+  background: #090e18db !important;
+  border: 1px solid transparent !important;
+  border-radius: 3px !important;
+  color: #e4eaf2 !important;
+  cursor: pointer;
+  box-shadow: none !important;
+  transition:
+    background 0.18s,
+    border-color 0.18s;
+}
+.cosmos-node-label.is-selected {
+  border-color: color-mix(
+    in srgb,
+    var(--node-colour) 42%,
+    transparent
+  ) !important;
+  background: #0b1420f2 !important;
+}
+.cosmos-node-label span {
+  display: block;
+  font-size: 7px !important;
+  color: var(--node-colour);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+.cosmos-node-label strong {
+  display: block;
+  font-size: 11px !important;
+  line-height: 1.25 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.015em !important;
+}
+.culture-cosmos button:focus-visible,
+.cosmos-node-label:focus-visible {
+  outline: 2px solid #d6ff75 !important;
+  outline-offset: 4px;
+}
+.cosmos-interface {
+  position: relative;
+  border-top: 1px solid #203040;
+  padding: 19px 25px 18px;
+  background: #0c1420;
+}
+.cosmos-legend {
+  display: flex;
+  gap: 22px;
+  color: #a4b5c8;
+  font-size: 9px;
+  letter-spacing: 0.025em;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.cosmos-legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.cosmos-legend i {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background: #9bcfff;
+}
+.legend-origin {
+  border: 1px solid #9bcfff;
+  background: transparent !important;
+  border-radius: 50%;
+}
+.legend-interest {
+  transform: rotate(45deg);
+  width: 5px !important;
+  height: 5px !important;
+}
+.legend-event {
+  border-radius: 50%;
+  background: #d6ff75 !important;
+}
+.cosmos-event-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.cosmos-event-controls .event-node {
+  position: static;
+  max-width: none;
+  width: auto;
+  left: auto;
+  top: auto;
+  transform: none;
+  z-index: auto;
+}
+.cosmos-event-controls button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid #2a3a4c !important;
+  color: #9eafc3 !important;
+  padding: 12px 0 !important;
+  min-width: 0;
+  cursor: pointer;
+  text-align: left !important;
+  border-radius: 0 !important;
+}
+.cosmos-event-controls button.active {
+  border-top-color: var(--node-colour) !important;
+  color: #f1f5fa !important;
+}
+.cosmos-event-controls button > span {
+  font-size: 10px;
+  align-self: flex-start;
+  color: var(--node-colour);
+  padding-top: 2px;
+}
+.cosmos-event-controls button strong {
+  font-size: 11px !important;
+  line-height: 1.3 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+}
+.cosmos-event-controls button b {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: auto;
+  color: var(--node-colour);
+}
+.cosmos-explanation {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 8px;
+  border-top: 1px solid #1c2b3c;
+  padding-top: 17px;
+}
+.cosmos-explanation > div {
+  flex: 1;
+}
+.cosmos-eyebrow {
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  color: #d6ff75;
+  font-weight: 600;
+}
+.cosmos-explanation p {
+  font-size: 11px !important;
+  line-height: 1.7 !important;
+  color: #bdcad9 !important;
+  margin: 6px 0 0 !important;
+  max-width: 650px;
+}
+.cosmos-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #d6ff75 !important;
+  color: #162009 !important;
+  padding: 12px 15px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  border: 0 !important;
+  border-radius: 3px !important;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.cosmos-open > span {
+  font-size: 16px;
+}
+.cosmos-relations {
+  margin-top: 14px;
+  color: #92a5ba;
+  font-size: 10px;
+}
+.cosmos-relations summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  padding: 9px 0;
+  border-top: 1px solid #1c2b3c;
+  font-size: 10px;
+}
+.cosmos-relations summary::-webkit-details-marker {
+  display: none;
+}
+.cosmos-relations p {
+  font-size: 10px !important;
+  line-height: 1.7 !important;
+  color: #92a5ba !important;
+  margin: 8px 0 !important;
+}
+.cosmos-taste-controls {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.cosmos-taste-controls button {
+  font-size: 10px !important;
+  background: #162234 !important;
+  border: 1px solid #2c4057 !important;
+  padding: 6px 9px !important;
+  color: #d3e1f0 !important;
+  border-radius: 3px !important;
+  cursor: pointer;
+}
+.cosmos-taste-controls button[aria-pressed="true"] {
+  border-color: #9bcfff !important;
+}
+.cosmos-fallback {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #112232 0, #090e18 65%);
+}
+.fallback-orbit {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+  height: 55%;
+  border: 1px solid #334257;
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+.fallback-orbit.secondary {
+  transform: rotate(27deg);
+  height: 70%;
+  top: 15%;
+  opacity: 0.45;
+}
+.fallback-origin {
+  position: absolute;
+  top: 43%;
+  left: 46%;
+  color: #9bcfff;
+  font-size: 36px;
+}
+.fallback-origin small {
+  position: absolute;
+  top: 44px;
+  left: -36px;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.fallback-planet {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--node-colour);
+  color: #18201d;
+  font-size: 11px;
+  box-shadow: 0 0 25px color-mix(in srgb, var(--node-colour) 14%, transparent);
+}
+.planet-0 {
+  left: 18%;
+  top: 27%;
+}
+.planet-1 {
+  left: 49%;
+  top: 65%;
+}
+.planet-2 {
+  left: 76%;
+  top: 34%;
+}
+.cosmos-fallback > p {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10px !important;
+  color: #97aec6 !important;
+}
+.culture-cosmos-compact {
+  border: 0;
+  background: transparent;
+}
+.culture-cosmos-compact .cosmos-stage {
+  height: 100%;
+  min-height: 0;
+}
+.culture-cosmos-compact .cosmos-coordinate {
+  display: none;
+}
+@media (max-width: 600px) {
+  /* Keep every taste node, but label the selected chapter's actual connections.
+     The complete taste list stays available in Read your connections. */
+  .culture-cosmos .cosmos-projected-label.is-context-taste { display: none; }
+  .culture-cosmos .cosmos-interest-label {
+    max-width: 90px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+  }
+  .cosmos-stage {
+    height: 365px;
+  }
+  .cosmos-coordinate {
+    left: 17px;
+    top: 17px;
+  }
+  .cosmos-view-controls {
+    left: 17px;
+    right: 17px;
+    bottom: 12px;
+    font-size: 8px;
+  }
+  .cosmos-view-controls button {
+    padding: 7px 8px !important;
+  }
+  .cosmos-node-label {
+    width: 106px;
+    padding: 5px 4px !important;
+  }
+  .cosmos-node-label strong {
+    font-size: 9px !important;
+  }
+  .cosmos-node-label span {
+    font-size: 5.5px !important;
+  }
+  .cosmos-interest-label {
+    font-size: 7px;
+  }
+  .cosmos-origin-label {
+    font-size: 6px;
+  }
+  .cosmos-interface {
+    padding: 16px;
+  }
+  .cosmos-legend {
+    gap: 14px;
+    font-size: 8px;
+    margin-bottom: 12px;
+  }
+  .cosmos-event-controls {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .cosmos-event-controls button {
+    padding: 10px 0 !important;
+    gap: 12px;
+  }
+  .cosmos-event-controls button strong {
+    font-size: 11px !important;
+  }
+  .cosmos-explanation {
+    gap: 14px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 14px;
+  }
+  .cosmos-open {
+    width: 100%;
+    font-size: 11px !important;
+    padding: 12px 14px !important;
+  }
+  .cosmos-explanation p {
+    font-size: 11px !important;
+  }
+  .fallback-planet {
+    width: 43px;
+    height: 43px;
+  }
+  .planet-0 {
+    left: 14%;
+  }
+  .planet-2 {
+    left: 74%;
+  }
+  .cosmos-fallback > p {
+    font-size: 8px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .culture-cosmos * {
+    transition: none !important;
+  }
+}
+
+.cosmos-control-buttons {
+  display: flex;
+  gap: 8px;
+  pointer-events: auto;
+}
+.cosmos-control-buttons button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+.culture-cosmos .cosmos-saved {
+  display: block;
+  margin-top: 5px;
+  color: #d6ff75;
+  font-size: 11px;
+  font-style: normal;
+}
+.culture-cosmos .cosmos-tour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 0 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2a3a4c;
+}
+.culture-cosmos .cosmos-tour-copy {
+  min-width: 0;
+  flex: 1;
+}
+.culture-cosmos .cosmos-tour-step {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #9bcfff;
+  line-height: 1.5;
+}
+.culture-cosmos .cosmos-tour p {
+  font-size: 15px !important;
+  color: #b6c7dc !important;
+  line-height: 1.65 !important;
+  margin: 7px 0 0 !important;
+  max-width: 680px;
+}
+.culture-cosmos .cosmos-tour h3 {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin: 9px 0 0;
+  line-height: 1.2;
+}
+.culture-cosmos .cosmos-tour button {
+  padding: 11px 15px !important;
+  font-size: 14px !important;
+  line-height: 1.4;
+  font-weight: 500;
+  border-radius: 4px !important;
+  background: #152133 !important;
+  border: 1px solid #334457 !important;
+  color: #e7eef7 !important;
+  cursor: pointer;
+}
+.culture-cosmos .cosmos-tour button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.culture-cosmos .cosmos-tour .cosmos-tour-start,
+.culture-cosmos .cosmos-tour .cosmos-tour-next {
+  background: #d6ff75 !important;
+  border-color: #d6ff75 !important;
+  color: #17210b !important;
+}
+.cosmos-tour-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.culture-cosmos .cosmos-tour.is-touring {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (max-width: 600px) {
+  .cosmos-view-controls > span {
+    max-width: 80px;
+    line-height: 1.4;
+  }
+  .culture-cosmos .cosmos-control-buttons button {
+    font-size: 11px !important;
+    padding: 8px !important;
+  }
+  .cosmos-control-buttons {
+    gap: 5px;
+  }
+  .culture-cosmos .cosmos-tour {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .culture-cosmos .cosmos-tour h3 {
+    font-size: 22px;
+  }
+  .culture-cosmos .cosmos-tour .cosmos-tour-start {
+    text-align: left;
+  }
+  .cosmos-tour-actions {
+    width: 100%;
+  }
+  .cosmos-tour-next {
+    flex: 1;
+  }
+}

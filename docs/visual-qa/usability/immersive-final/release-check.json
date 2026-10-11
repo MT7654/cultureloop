@@ -1,0 +1,22 @@
+{
+  "errors": [],
+  "failedRequests": [],
+  "screens": [
+    {
+      "name": "desktop",
+      "webgl": true,
+      "savedAfterReload": 1,
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "webgl": true,
+      "savedAfterReload": 1,
+      "overflow": false
+    }
+  ],
+  "idleMainThreadMs": 723,
+  "frontendCredentialMarkersAbsent": true,
+  "actualCredentialValuesAbsent": true,
+  "productionPreviewAPIValidationStatus": 400
+}

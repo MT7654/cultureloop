@@ -1,0 +1,50 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "overflow": false,
+    "silentNodesMove": true,
+    "observedRenderCallbacksPerSecond": 59.2,
+    "sampleMs": 5037,
+    "pausedNodesStable": true,
+    "pausedAdditionalFrames": 0,
+    "note": "Headless Chrome on this host; render callbacks are measured, not physical-device GPU presentation. Concurrent browser activity can affect results."
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "errors": [],
+    "overflow": false,
+    "silentNodesMove": true,
+    "observedRenderCallbacksPerSecond": 60.1,
+    "sampleMs": 5024,
+    "pausedNodesStable": true,
+    "pausedAdditionalFrames": 0,
+    "note": "Headless Chrome on this host; render callbacks are measured, not physical-device GPU presentation. Concurrent browser activity can affect results."
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "overflow": false,
+    "silentNodesMove": true,
+    "observedRenderCallbacksPerSecond": 60.1,
+    "sampleMs": 5024,
+    "pausedNodesStable": true,
+    "pausedAdditionalFrames": 0,
+    "note": "Headless Chrome on this host; render callbacks are measured, not physical-device GPU presentation. Concurrent browser activity can affect results."
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "errors": [],
+    "overflow": false,
+    "silentNodesMove": true,
+    "observedRenderCallbacksPerSecond": 60.2,
+    "sampleMs": 5029,
+    "pausedNodesStable": true,
+    "pausedAdditionalFrames": 0,
+    "note": "Headless Chrome on this host; render callbacks are measured, not physical-device GPU presentation. Concurrent browser activity can affect results."
+  }
+]

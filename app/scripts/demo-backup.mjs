@@ -1,0 +1,23 @@
+// Records the real, manual journey. No AI fixtures, provider requests or audio track.
+import { chromium } from 'playwright';
+import fs from 'node:fs';
+const dir='../docs/demo'; fs.mkdirSync(dir,{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const context=await browser.newContext({viewport:{width:1440,height:1000},recordVideo:{dir,size:{width:1440,height:1000}}});
+const page=await context.newPage(); const errors=[]; page.on('pageerror',error=>errors.push(error.message));
+const pause=()=>page.waitForTimeout(2500);
+await page.goto('http://127.0.0.1:5173'); await pause();
+await page.getByRole('button',{name:'Try the S$45 demo'}).click(); await pause();
+await page.getByRole('button',{name:'What moves you'}).click(); await pause();
+await page.getByRole('button',{name:'Reveal my CultureLoop'}).click();
+await page.locator('.cosmos-stage').scrollIntoViewIfNeeded(); await page.waitForTimeout(6000);
+await page.getByRole('button',{name:'Follow a connection',exact:false}).click(); await page.locator('.culture-cosmos:not(.culture-cosmos-compact)').scrollIntoViewIfNeeded(); await pause();
+await page.getByRole('button',{name:'Next connection',exact:false}).click(); await page.locator('.cosmos-stage').scrollIntoViewIfNeeded(); await pause();
+await page.getByRole('button',{name:'Next connection',exact:false}).click(); await page.locator('.cosmos-stage').scrollIntoViewIfNeeded(); await pause();
+await page.getByRole('button',{name:'Explore this experience',exact:false}).click(); await pause();
+await page.locator('.cultural-story').scrollIntoViewIfNeeded(); await pause();
+await page.getByRole('button',{name:'Save to My Loop',exact:true}).click();
+await page.getByRole('button',{name:'See my Loop'}).click(); await pause();
+const video=page.video(); await context.close(); await video.saveAs(dir+'/cultureloop-manual-demo.webm');
+await browser.close(); fs.writeFileSync(dir+'/recording-check.json',JSON.stringify({errors,manualJourney:true,aiRequests:0,audioTrack:false},null,2));
+console.log(JSON.stringify({errors,recording:dir+'/cultureloop-manual-demo.webm',audioTrack:false}));

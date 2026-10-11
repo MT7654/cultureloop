@@ -1,0 +1,453 @@
+{
+  "errors": [],
+  "reports": [
+    {
+      "device": "desktop",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "17px",
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "17px",
+        ".cosmos-node-label strong": "11px",
+        ".cosmos-interest-label": "9px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "17px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "desktop",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "17px",
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "17px",
+        ".cosmos-node-label strong": "11px",
+        ".cosmos-interest-label": "9px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "17px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "laptop",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "16px",
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "16px",
+        ".cosmos-node-label strong": "9px",
+        ".cosmos-interest-label": "7px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "16px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "mobile",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "welcome",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "story",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "dna",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": "16px",
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "discover",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": "16px",
+        ".cosmos-node-label strong": "9px",
+        ".cosmos-interest-label": "7px",
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "list",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": "16px",
+        ".event-meta": "14px",
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": "16px"
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "experience",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "loop",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    },
+    {
+      "device": "small-mobile",
+      "screen": "returning",
+      "overflow": false,
+      "fonts": {
+        ".match-reason": null,
+        ".event-meta": null,
+        ".connection-explanation p": null,
+        ".cosmos-node-label strong": null,
+        ".cosmos-interest-label": null,
+        ".taste-tile b": null,
+        ".atmosphere-caption strong": null
+      }
+    }
+  ]
+}
