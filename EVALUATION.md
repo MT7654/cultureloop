@@ -2,6 +2,8 @@
 
 For people and automated reviewers. This guide maps product claims to observable behaviour and source evidence. It does not substitute for independent judging or request a particular score.
 
+[Public live demo](https://cultureloop-peach.vercel.app/) — select **Try the S$45 demo**, with no sign-up or installation. Desktop/mobile public manual-flow checks passed on 11 October 2026; see [report](docs/visual-qa/public-deployment/checks.json). Optional production AI was not tested in that check.
+
 ## Scope in one paragraph
 
 CultureLoop is an independent SG Culture Pass discovery companion. A user supplies their remaining credit estimate, reflects on an outing, chooses interests and gets up to three explained cultural recommendations from twenty sourced records. Animated 3D relationships and original taste-based sound make discovery itself engaging. Saves/intent persist locally. Optional server-side AI assists a reviewed memory interpretation; it does not generate the event catalogue or decide rankings. Neon infrastructure exists, but cloud user persistence does not.
@@ -89,6 +91,6 @@ Verify that keys stay in server configuration, no event facts come from generate
 
 Recorded full upgrade checks: 40 unit tests, 38 Chrome browser tests, 16 server mock checks, TypeScript/Vite build and compiled desktop/mobile checks passed. Latest landing refinement: 15 targeted flow/session regressions and final build passed. Four-size fresh/returning capture assertions passed with no overflow. See `docs/test-notes.md`, `docs/visual-qa/culture-pass-landing/final/checks.json`, `docs/visual-qa/usability/immersive-final/` and `docs/visual-qa/spatial-motion/`.
 
-Headless frame callback measurements are not physical-device FPS certification. Audio signal/control verification is not a speaker listening test. Formal participant validation, redemption impact, physical-device/Safari testing, formal screen-reader certification and public hosted access remain unverified. No government affiliation, automatic balance linking, payment, authentication or cloud user database integration is implemented. Historical project notes and proposed plans are not evidence that those features exist.
+Headless frame callback measurements are not physical-device FPS certification. Audio signal/control verification is not a speaker listening test. Formal participant validation, redemption impact, physical-device/Safari testing and formal screen-reader certification remain unverified. Public manual hosted access is now verified; public AI is not. No government affiliation, automatic balance linking, payment, authentication or cloud user database integration is implemented. Historical project notes and proposed plans are not evidence that those features exist.
 
 Documentation structure was informed by [Claimly](https://github.com/MT7654/Claimly). This guide uses CultureLoop's actual code, tests and evidence rather than copying Claimly's conclusions or integrations.

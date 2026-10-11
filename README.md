@@ -4,6 +4,8 @@
 
 CultureLoop helps you connect your last cultural outing to your next Singapore cultural discovery, with your remaining SG Culture Pass credits in mind.
 
+**[Open the live demo](https://cultureloop-peach.vercel.app/)** — no sign-up or installation needed. Select **Try the S$45 demo** to begin.
+
 Built by **Malcolm Toh Jia Jun**, a solo participant in **COMMON GROUND — One Day Creative Tech Makeathon**, Singapore, 11 October 2026. Culture × Tech is the confirmed track; Design × Tech is a proposed additional selection.
 
 ![CultureLoop landing page](docs/visual-qa/culture-pass-landing/final/desktop-fresh-viewport.png)
@@ -101,7 +103,7 @@ For Vercel, select repository root directory **`app`**, install `npm ci`, build 
 
 Neon was linked/provisioned during the makeathon. Root `neon.ts` describes a private `uploads` bucket. **The app does not currently query Neon or cloud-sync user journeys.** Its working persistence is localStorage. The infrastructure project is not needed to run or evaluate the frontend. No authentication, payment or Singpass integration is included. [Neon setup and boundaries](docs/neon-setup.md).
 
-This source repository is available on GitHub. **No public hosted application URL has yet been verified**; localhost is only usable on the running computer. A frontend deployment is separate from `neon deploy`.
+The [public Vercel deployment](https://cultureloop-peach.vercel.app/) was supplied by Malcolm and checked without sign-in on 11 October 2026 at desktop/mobile sizes: manual demo, three recommendations, event preview, save/reload and no horizontal overflow/page errors. Actual desktop landing and mobile discovery captures were inspected. Production AI was not exercised in that check. [Public smoke-check report](docs/visual-qa/public-deployment/checks.json). A frontend deployment is separate from `neon deploy`.
 
 ## Data, cultural meaning and limitations
 

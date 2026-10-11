@@ -1,0 +1,28 @@
+{
+  "url": "https://cultureloop-peach.vercel.app/",
+  "errors": [],
+  "checks": [
+    {
+      "name": "desktop",
+      "status": 200,
+      "manualDemo": true,
+      "recommendations": 3,
+      "saveReload": true,
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "status": 200,
+      "manualDemo": true,
+      "recommendations": 3,
+      "saveReload": true,
+      "overflow": false
+    }
+  ],
+  "video": {
+    "durationSeconds": 30.72,
+    "finite": true,
+    "width": 1440,
+    "height": 1000
+  }
+}

@@ -1,8 +1,13 @@
 # CultureLoop project knowledge
 
-Updated 11 October 2026. Culture × Tech, COMMON GROUND Singapore. Solo participant **Malcolm Toh Jia Jun**; separate team name not supplied. No other human collaborators claimed.
+Updated 11 October 2026. Culture × Tech, COMMON GROUND Singapore. Solo participant **Malcolm Toh Jia Jun**; saved team is **Malcolm Toh**, as displayed in the participant-supplied live form. No other human collaborators claimed.
 
-## Latest delivery: source published and evaluator documentation verified
+## Latest delivery and form: live Vercel demo verified, simplified copy prepared
+
+Malcolm reports deployment and provides https://cultureloop-peach.vercel.app/. Fresh unauthenticated Chrome contexts at 1440×900 and 390×844 returned HTTP200, opened the manual S$45 journey, produced three recommended events, opened preview and retained saves after reload, with zero page errors or overflow. Actual public desktop landing and mobile discovery captures inspected; evidence in docs/visual-qa/public-deployment/checks.json. Web text extraction could not access this client-rendered URL; actual Chrome verified it instead. Optional public AI was not exercised or its configuration inferred. Actual local silent WebM metadata measured 30.72 seconds at 1440×1000, meeting the supplied two-minute video limit; recording predates final landing-copy revision.
+
+Participant pasted the simplified live form: overview/build each now one response under 100 words; no separate track reflection fields; team/collaboration and AI/tool attribution remain required. This supplied form supersedes the older kit field layout for actual entry. Kept the seven kit sections as supporting context but replaced overview/build with single paragraphs (81 and 86 words, programmatically counted). Added public URL, concise solo process/attribution and try-it copy. Saved team name is Malcolm Toh. Form shows two selected tracks but pasted text does not identify the actual selected pair; Design×Tech+Culture×Tech remains the recommended pair. First-person process/next-step copy is for Malcolm's review. No external form draft/save/submit action, Figma sharing change or new AI request performed. README, app README, evaluator and demo notes updated to reflect actual public hosting; source documentation update is within the earlier authorised repository publication. Shared Page update remains pending.
+## Historical delivery: source published and evaluator documentation verified
 
 Malcolm explicitly authorises pushing the project to https://github.com/MT7654/cultureloop and asks for clear judge/LLM-facing documentation using Claimly as a reference. GitHub metadata confirms public, empty, main default and account push permission. Read actual Claimly README, AGENTS.md and EVALUATION.md through GitHub CLI; used its credential-free path, exact source pointers and honest boundary structure, not its product/provider assertions. Created CultureLoop root README.md, AGENTS.md and EVALUATION.md; added empty .env.example, line-ending rules and publication scan. Root app directory requirements, max-three recommendations, dated catalogue, optional AI, local persistence, Neon boundary, attribution and unverified hosting are explicit. Codex assisted this writing; no instruction asks for preferential judging.
 
@@ -105,6 +110,7 @@ Sandbox npm DNS and Node realpath EPERM required authorised local unsandboxed ex
 Local preview at http://127.0.0.1:5173/ while the dev server runs; same computer only. Production output app/dist, Vercel configuration, README and demo walkthrough ready. Preview panel open request returned queued, not proof user saw it. No hosted demo/public source upload; localhost is not a remote judge link. Publication requires authorisation under the specification. Figma authenticated access verified; external judge access pending.
 
 Seven-section draft: docs/submission-draft.md. Kit checker: section 2 85/100; section 3 89/100 words. Malcolm sole participant/Culture × Tech recorded. Draft pending required judge-accessible source link, publication or demo video, external supporting-material/Figma access and participant personal-process/next-priority reflection. Proposed next work labelled. No entry submitted. Pages sync remains pending; no unrelated archived Page fetched or edited.
+
 
 
 

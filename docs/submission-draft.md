@@ -1,42 +1,30 @@
 # CultureLoop — Common Ground submission draft
 
-Draft for review; not submitted. Overview/build wording refreshed for the form on 11 October 2026: 74/71 content words, 89/91 including labels. Section 3 next steps are suggested priorities for Malcolm's review. Missing-information checklist follows the seven reusable sections. Shared project Page update is pending.
+Draft for Malcolm's review; not submitted. Adapted to the simplified live form supplied by Malcolm on 11 October 2026: one 100-word response for overview and one for build, plus links, team/collaboration and AI/tool attribution. Overview is 81 words; build is 86 words. Next steps remain suggested priorities for review. Seven kit sections are retained below for history/supporting context, but section 5 is no longer a separate field in the supplied form. Shared project Page update is pending.
 
 ## 1. Team Details
 
 — Project name: CultureLoop
 
-— Team name: Individual entry; separate team name not supplied.
+— Team name: Malcolm Toh, as displayed in the supplied saved-team form.
 
 — Team members: Malcolm Toh Jia Jun (sole participant).
 
-— Tracks: Culture × Tech confirmed. Malcolm confirms multiple selections are allowed; the kit template permits up to two of four options: Design × Tech; Culture × Tech; Best Use of Tech; Common Ground Award. Proposed pair: Design × Tech + Culture × Tech, awaiting Malcolm's choice. Final-form handling of automatic cross-track award consideration is unverified.
+— Tracks: Recommended pair remains Design × Tech + Culture × Tech. Supplied form shows two selections but the pasted text does not identify which checkboxes are selected. Its instructions confirm judged-track panels may both consider a project nominated for both. Culture × Tech was previously confirmed; Malcolm should verify the intended pair in the form.
 
 ## 2. Project Overview (Max. 100 words)
 
-— One-liner: CultureLoop helps you turn your remaining SG Culture Pass credits into your next cultural discovery.
-
-— The problem or inspiration: After one outing, what comes next? CultureLoop explores whether a personal connection could encourage people to keep discovering Singapore’s arts and culture.
-
-— The solution: Enter your remaining credits, share what you enjoyed and choose your interests. Explore up to three recommendations through an animated 3D constellation.
-
-— What makes it interesting? Original soundscapes and explainable connections make discovery an experience itself, rather than another event directory.
+CultureLoop helps people turn their remaining SG Culture Pass credits into their next cultural discovery. After one outing, what makes someone want to return? The project explores whether a personal connection can provide that nudge. Users enter their remaining credits, share what they enjoyed and choose their interests. Up to three explained recommendations appear in an animated 3D constellation. Original soundscapes and cultural notes invite users to explore connections between familiar interests and different art forms, making discovery an experience itself.
 
 ## 3. The Build (Max. 100 words)
 
-— Technology used: Codex, React, TypeScript, Three.js, Web Audio and OpenAI, with Mobbin and Figma for design exploration.
-
-— What did you make? A working web app with 20 sourced cultural experiences, personalised recommendations, animated constellations, optional AI memory interpretation and saved collections.
-
-— What did you experiment with? Connecting personal memories to different art forms, composing soundscapes from users’ tastes, and making 3D exploration work on mobile.
-
-— What would you do next? Test with users and cultural practitioners, refresh event information, and explore whether these connections encourage another outing.
+Built with Codex, React, TypeScript, Three.js and Web Audio, using Mobbin and Figma for design exploration. The working app includes 20 sourced event records, up to three explained recommendations, animated constellations, taste-based soundscapes and locally saved collections. Optional server-side OpenAI features interpret memories for user review. I experimented with connecting familiar interests to different art forms, making spatial navigation accessible and keeping music continuous across screens. Next, I would test with users and cultural practitioners, refresh the catalogue and explore whether the experience encourages another outing.
 
 ## 4. Project Links & Demo
 
-— Live demo / deployed project: Pending publication. Local preview: http://127.0.0.1:5173/ (same computer only; not judge-accessible remotely).
+— Live demo / deployed project: [CultureLoop on Vercel](https://cultureloop-peach.vercel.app/). Verified without login in fresh Chrome contexts at desktop 1440×900 and mobile 390×844 on 11 October 2026. HTTP200, manual demo/three-event recommendations/preview/save/reload passed without page errors or overflow; desktop landing and mobile discovery captures inspected. Optional production AI was not exercised.
 
-— Demo video: [Silent manual-flow WebM recording](https://github.com/MT7654/cultureloop/blob/main/docs/demo/cultureloop-manual-demo.webm), included in the public source repository. Playback/download behaviour depends on the viewer; it is not a narrated pitch. No AI fixture is presented as a real response.
+— Demo video: [Silent manual-flow WebM recording](https://github.com/MT7654/cultureloop/blob/main/docs/demo/cultureloop-manual-demo.webm), included in the public source repository. Duration measured from the actual local WebM in Chrome: 30.72 seconds, 1440×1000, within the form's two-minute limit. It predates the final Culture Pass landing copy and has no narration/audio track or AI fixture request. Playback/download behaviour depends on the viewer.
 
 — GitHub / source code (required unless the project isn't based on code): [MT7654/cultureloop](https://github.com/MT7654/cultureloop). Public source pushed to main; README and evaluator guide verified readable without credentials on 11 October 2026. React application is under `app/`.
 
@@ -44,7 +32,7 @@ Draft for review; not submitted. Overview/build wording refreshed for the form o
 
 — Other supporting materials: [README and setup](https://github.com/MT7654/cultureloop#readme), [evaluator guide](https://github.com/MT7654/cultureloop/blob/main/EVALUATION.md), [design references](https://github.com/MT7654/cultureloop/blob/main/docs/design-references.md), [provenance](https://github.com/MT7654/cultureloop/blob/main/docs/data-provenance.md), and selected final screenshots under docs/visual-qa/. Intermediate captures and unrelated archives remain local.
 
-Setup: Node 22.12+; from `app`, run `npm ci` and `npm run dev`. For the demo, choose “Try the S$45 demo”, reveal connections, inspect a bridge, play the labelled interpretation and save to My Loop. Official listing links handle current event information and external booking.
+Try-it instructions for the form: No installation or sign-up needed. Open the live demo and select “Try the S$45 demo”. Review the story, choose “What moves you”, select interests and reveal your constellation. Explore a connection, open a preview, press Play for the original soundtrack and save to My Loop. Credits are illustrative; saving does not spend them. AI features are optional. README/evaluator links above provide supporting evidence and local setup.
 
 ## 5. Track-Specific Reflection
 
@@ -58,11 +46,17 @@ CultureLoop turns personalisation into a spatial interaction: a remembered exper
 
 ## 6. Team & Collaboration
 
-This is an individual entry by Malcolm Toh Jia Jun. Malcolm supplied the chosen concept, cultural intent, approved product specification and creative standard. Codex assisted reference research, design exploration, coding, verification and drafting. No additional human collaborators or participant-testing results are claimed. A more detailed personal reflection can be added by Malcolm before submission.
+I built CultureLoop as a solo project. I developed the concept, set the creative direction and reviewed the experience throughout. I used Codex to help bring UX research, interaction design and implementation together. My feedback shaped readability, music, moving constellations and the clearer SG Culture Pass story. The focus was a coherent, personal experience with understandable recommendations and traceable event information.
 
 ## 7. AI & Tool Attribution
 
-Codex assisted implementation, original vector compositions, original Web Audio synthesis, research synthesis, tests, documentation and this draft. Exact underlying Codex model version is not established. Bounded Codex subagents assisted event research, editable Figma studies, spatial animation, sound and server-side memory interpretation. OpenAI Responses powers explicitly requested optional memory suggestions and selection of approved cultural notes. One real interpretation smoke test used `gpt-4o-mini-2024-07-18` (334 tokens); other automated AI checks use labelled test fixtures. AI does not supply prices, dates, eligibility, booking links or event rankings. Public paid API enablement remains disabled pending hosting protections.
+Concise response for the live form:
+
+I used OpenAI Codex for research, design exploration, coding, testing and submission writing. Mobbin’s Spotify and DICE references informed interaction patterns; Figma MCP supported visual exploration. The OpenAI API supports optional, user-reviewed memory interpretation and connections to approved cultural notes. Event facts come from SG Culture Pass, authorised ticketing partners and organiser sources, rather than AI generation. Artwork and synthesised sound are original creative interpretations. Font and icon licences are included. Neon was provisioned; user preferences and saved journeys currently stay in browser storage.
+
+Detailed supporting attribution:
+
+Codex assisted implementation, original vector compositions, original Web Audio synthesis, research synthesis, tests, documentation and this draft. Exact underlying Codex model version is not established. Bounded Codex subagents assisted event research, editable Figma studies, spatial animation, sound and server-side memory interpretation. OpenAI Responses powers explicitly requested optional memory suggestions and selection of approved cultural notes. One real interpretation smoke test used `gpt-4o-mini-2024-07-18` (334 tokens); other automated AI checks use labelled test fixtures. AI does not supply prices, dates, eligibility, booking links or event rankings. Public paid API defaults to disabled pending hosting protections; the participant's production AI configuration was not tested in the public manual smoke check.
 
 Mobbin’s connected app supplied inspected Spotify Home/Browse/Now Playing/onboarding, DICE discovery/detail and earlier Airbnb accommodation-detail screens; see docs/redesign-audit.md and docs/design-references.md for exact links. These were references only; no competitor images were bundled. Figma MCP created two original art directions, preview studies and revised atlas compositions; Figma Make was not used. The React app remains canonical.
 
@@ -70,4 +64,4 @@ SG Culture Pass, BookMyShow, SISTIC and organiser pages supply the twenty event 
 
 ---
 
-Pending before this draft is ready for submission: separate team name if wanted; Malcolm’s detailed process/next-step reflection; final track choice; hosted application if desired; judge access to Figma and confirmation that the included silent video suits the form. Public source and selected supporting materials are now available on GitHub. Pages sync is pending because no Pages editing tool is exposed. No external entry has been sent.
+Ready for Malcolm to review against the live form. Confirm the selected track pair and first-person process/next-step wording; optional Figma can be omitted while judge access is unverified. Hosted manual journey and public source are verified; the existing silent video is under two minutes but is an earlier landing snapshot. Production AI enablement is untested here. Pages sync is pending because no Pages editing tool is exposed. No external draft/save/submit action has been performed.
