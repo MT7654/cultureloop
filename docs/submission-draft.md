@@ -36,13 +36,13 @@ Draft for review; not submitted. Overview/build wording refreshed for the form o
 
 — Live demo / deployed project: Pending publication. Local preview: http://127.0.0.1:5173/ (same computer only; not judge-accessible remotely).
 
-— Demo video: Local silent manual-flow backup at `D:\CultureLoop\docs\demo\cultureloop-manual-demo.webm`; not uploaded or judge-accessible. No AI fixture is presented as a real response.
+— Demo video: [Silent manual-flow WebM recording](https://github.com/MT7654/cultureloop/blob/main/docs/demo/cultureloop-manual-demo.webm), included in the public source repository. Playback/download behaviour depends on the viewer; it is not a narrated pitch. No AI fixture is presented as a real response.
 
-— GitHub / source code (required unless the project isn't based on code): Public or judge-accessible repository link pending. Source is currently in `D:\CultureLoop\app`.
+— GitHub / source code (required unless the project isn't based on code): [MT7654/cultureloop](https://github.com/MT7654/cultureloop). Public source pushed to main; README and evaluator guide verified readable without credentials on 11 October 2026. React application is under `app/`.
 
 — Figma / prototype link (optional): [CultureLoop art directions](https://www.figma.com/design/GJnRFnCGzSKxN0c9IfauMR). File creation and editing verified; unauthenticated judge access unverified. No sharing permissions changed.
 
-— Other supporting materials: Local docs/design-references.md, docs/design-decisions.md, docs/data-provenance.md, docs/test-notes.md and docs/visual-qa/. These require publication or attachment to be accessible remotely.
+— Other supporting materials: [README and setup](https://github.com/MT7654/cultureloop#readme), [evaluator guide](https://github.com/MT7654/cultureloop/blob/main/EVALUATION.md), [design references](https://github.com/MT7654/cultureloop/blob/main/docs/design-references.md), [provenance](https://github.com/MT7654/cultureloop/blob/main/docs/data-provenance.md), and selected final screenshots under docs/visual-qa/. Intermediate captures and unrelated archives remain local.
 
 Setup: Node 22.12+; from `app`, run `npm ci` and `npm run dev`. For the demo, choose “Try the S$45 demo”, reveal connections, inspect a bridge, play the labelled interpretation and save to My Loop. Official listing links handle current event information and external booking.
 
@@ -70,4 +70,4 @@ SG Culture Pass, BookMyShow, SISTIC and organiser pages supply the twenty event 
 
 ---
 
-Pending before this draft is ready for submission: separate team name if wanted; Malcolm’s detailed process/next-step reflection; required judge-accessible source link; a hosted demo or demo video; judge access to Figma/supporting materials. Pages sync is pending because no Pages editing tool is exposed. No external entry has been sent.
+Pending before this draft is ready for submission: separate team name if wanted; Malcolm’s detailed process/next-step reflection; final track choice; hosted application if desired; judge access to Figma and confirmation that the included silent video suits the form. Public source and selected supporting materials are now available on GitHub. Pages sync is pending because no Pages editing tool is exposed. No external entry has been sent.

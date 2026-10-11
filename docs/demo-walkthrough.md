@@ -19,4 +19,4 @@ Choose **Start a new exploration** on welcome. Keep the entered balance or chang
 
 The screenshot storyboard is `docs/visual-qa/usability/immersive-final/`. `node scripts/demo-backup.mjs` records the actual manual flow into `docs/demo/cultureloop-manual-demo.webm`; it uses no AI fixtures or paid requests. Playwright's recording is silent and is a visual backup, not evidence of recorded music. Manual onboarding, deterministic discovery and saving remain available when the AI/server/network fails.
 
-Before external delivery, hosting and judge-accessible source links are still needed. The submission draft has not been sent. Figma judge access and shared Pages sync remain unverified/pending.
+Source, selected final evidence and the silent manual-flow recording are published at [MT7654/cultureloop](https://github.com/MT7654/cultureloop). README/evaluator access was checked without credentials. Public frontend hosting is still pending. The submission draft has not been sent. Figma judge access and shared Pages sync remain unverified/pending.

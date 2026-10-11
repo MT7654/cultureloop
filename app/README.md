@@ -70,7 +70,7 @@ Neon backend infrastructure is linked and its requested configuration deployed f
 
 Vercel-compatible app. Select root directory `app`, install `npm ci`, build `npm run build`, output `dist`. Hash navigation does not require a server router. Manual discovery works without environment variables; optional Node handlers in `api/` require a server-only `OPENAI_API_KEY`. Public paid endpoints remain disabled until hosting abuse/spending controls are configured and `CULTURELOOP_AI_PUBLIC_ENABLED=true` is deliberately set. The process-local limiter alone is not distributed protection. Local `.env.local` does not configure hosting.
 
-The production output is in `app/dist`. Source publication is authorised for [MT7654/cultureloop](https://github.com/MT7654/cultureloop); the root README records its delivery status. No hosted frontend URL has been verified. Localhost is not a judge-accessible remote demo. Participant validation, public hosted access and submission finalisation remain pending. The seven-section draft is at `../docs/submission-draft.md`; no entry was submitted externally.
+The production output is in `app/dist`. Source is published at [MT7654/cultureloop](https://github.com/MT7654/cultureloop); the root README and evaluator guide were verified readable without credentials. No hosted frontend URL has been verified. Localhost is not a judge-accessible remote demo. Participant validation, public hosted access and submission finalisation remain pending. The seven-section draft is at `../docs/submission-draft.md`; no entry was submitted externally.
 
 ## Verification and design
 
